@@ -3,7 +3,7 @@
 // To demonstrate the AUTO-REVERT feature, change the 2 to a 3 and push!
 
 test('basic addition logic', () => {
-  expect(1 + 1).toBe(3); // INTENTIONALLY BROKEN FOR AUTO-REVERT
+  expect(1 + 1).toBe(2);
 });
 
 test('basic subtraction logic', () => {
