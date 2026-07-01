@@ -1,0 +1,22 @@
+{
+  "language": "Node.js",
+  "image": "node:20-alpine",
+  "stages": {
+    "setup": {
+      "run": "npm ci",
+      "needs": []
+    },
+    "lint": {
+      "run": "npm run lint",
+      "needs": ["setup"]
+    },
+    "test": {
+      "run": "npm run test",
+      "needs": ["setup"]
+    },
+    "compile": {
+      "run": "npm run build",
+      "needs": ["lint", "test"]
+    }
+  }
+}

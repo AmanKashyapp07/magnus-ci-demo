@@ -4,7 +4,9 @@
   "description": "Demo repository for MagnusCI Interview",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "echo 'Linting successful!'",
+    "build": "echo 'Build compilation successful!'"
   },
   "dependencies": {
     "jest": "^29.7.0"
