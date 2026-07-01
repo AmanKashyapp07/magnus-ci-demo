@@ -1,0 +1,12 @@
+{
+  "name": "magnus-ci-demo",
+  "version": "1.0.0",
+  "description": "Demo repository for MagnusCI Interview",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
