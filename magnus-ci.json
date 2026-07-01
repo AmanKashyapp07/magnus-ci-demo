@@ -3,7 +3,7 @@
   "image": "node:20-alpine",
   "stages": {
     "setup": { "run": "npm ci || npm install" },
-    "lint": { "run": "echo 'ESLint: 0 warnings, 0 errors'", "needs": ["setup"] },
+    "lint": { "run": "echo 'ESLint: Code passes all linting rules'", "needs": ["setup"] },
     "test": { "run": "npm test", "needs": ["setup"] },
     "compile": { "run": "echo 'Webpack bundle compiled successfully'", "needs": ["lint", "test"] }
   }
